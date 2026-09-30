@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "WWF SmackDown! (USA).cue",
+      "cue_path": "disc/WWF SmackDown! (USA).cue",
+      "serial": "SLUS-00927",
+      "boot_exe": "SLUS_009.27",
+      "entry_pc": "0x80060C84",
+      "track_count": 1,
+      "required_disc_fp": "753f500c6518f48f77c3061adea960cd274e8365ccd03cdd5e0342c41de87d8f"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+
+[game]
+name = "WWF SmackDown!"
+id = "SLUS-00927"
+players = 1
+exe = "disc/SLUS_009.27"
+disc = "disc/WWF SmackDown! (USA).cue"
+load_address = "0x80010000"
+entry_pc = "0x80060C84"
+text_size = "0x00075000"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "WWF SmackDown! (USA).bin"
+cue_name = "WWF SmackDown! (USA).cue"
+boot_exe = "SLUS_009.27"
+known_sizes = [593016816]
+known_md5 = [
+  "21a607f7e0c40812259e85de8129b2d3",
+]
+known_sha1 = [
+  "20138d5889120350d9d6ff1e27534b4c095a53a8",
+]
+known_crc32 = [
+  "278d3804",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "WWF SmackDown! Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "753f500c6518f48f77c3061adea960cd274e8365ccd03cdd5e0342c41de87d8f"
+
+[pgo]
+enabled = false
